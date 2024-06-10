@@ -12,6 +12,7 @@ public class TopicConfig {
     public NewTopic topic() {
         return TopicBuilder
                 .name("hua_kafka_topic")
+                .partitions(5)
                 .build();
     }
 }

@@ -31,7 +31,6 @@ public class ChangesHandler implements EventHandler {
     @Override
     public void onMessage(String s, MessageEvent messageEvent) throws Exception {
         LOGGER.info(String.format("Event data -> %s", messageEvent.getData()));
-        template.send("hua_kafka_topic", messageEvent.getData());
     }
 
     @Override
